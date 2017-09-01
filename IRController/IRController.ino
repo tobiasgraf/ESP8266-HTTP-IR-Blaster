@@ -16,7 +16,7 @@
 #include <NTPClient.h>
 #include <DNSServer.h>
 
-const int configpin = 15;                                     // GPIO13 (D7 on D1 Mini) to enable configuration (connect to ground)
+const int configpin = 16;                                     // GPI016 (D0 on D1 Mini) to enable configuration (connect to ground)
 const int ledpin = BUILTIN_LED;                               // Built in LED defined for WEMOS people
 const char *wifi_config_name = "IRBlaster Configuration";
 const char serverName[] = "checkip.dyndns.org";
