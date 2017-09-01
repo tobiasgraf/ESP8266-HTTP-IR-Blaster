@@ -14,6 +14,7 @@
 
 #include <Ticker.h>                                           // For LED status
 #include <NTPClient.h>
+#include <DNSServer.h>
 
 const int configpin = 15;                                     // GPIO13 (D7 on D1 Mini) to enable configuration (connect to ground)
 const int ledpin = BUILTIN_LED;                               // Built in LED defined for WEMOS people
