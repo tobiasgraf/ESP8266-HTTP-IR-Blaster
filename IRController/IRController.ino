@@ -1035,7 +1035,8 @@ void rawblast(JsonArray &raw, int khz, int rdelay, int pulse, int pdelay, int re
       irsend.enableIROut(khz);
       for (unsigned int i = 0; i < raw.size(); i++) {
         int val = raw[i];
-        if (i & 1) irsend.space(std::max(0, val));
+        //if (i & 1) irsend.space(std::max(0, val));
+        if (i & 1) irsend.space(0>val?0:val);
         else       irsend.mark(val);
       }
       irsend.space(0);
